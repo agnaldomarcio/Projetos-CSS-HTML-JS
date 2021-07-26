@@ -1,2 +1,3 @@
 # Projetos CSS HTML JS
- Projetos css, html e javascript
+ Projetos desenvolvidos em css, html e javascript
+ Repositorio criado para todos os desenvolvedores que queiram aprimorar suas habilidades em front-end.
