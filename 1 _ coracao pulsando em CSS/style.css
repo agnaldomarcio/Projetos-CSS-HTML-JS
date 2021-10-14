@@ -38,19 +38,13 @@
     text-rendering: optimizeLegibility;
     font-variant-ligatures: common-ligatures contextual;
   }
-  
-  /* ---------------------------------
-            CABEÇALHO	
-  -----------------------------------*/
+ 
   h1 {
     color: var(--color-gray);
     font-weight: 700;
     text-align: center;
   }
-  
-  /* ---------------------------------
-            CLASSE ÚTIL	
-  -----------------------------------*/
+
   .container {
     width: 50em;
     margin: 5em auto;
