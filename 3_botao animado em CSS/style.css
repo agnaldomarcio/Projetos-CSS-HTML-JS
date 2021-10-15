@@ -5,6 +5,7 @@
   :root {
     --color-white: rgb(255, 255, 255);
     --color-green: rgb(43, 141, 112);
+    --color-blue: rgb(18, 165, 202);
   
     --font-family: Verdana, Geneva, Tahoma, sans-serif;
   }
@@ -51,21 +52,51 @@
 /* ---------------------------------
             BUTTON ANIMATED
   -----------------------------------*/
-.button__animated {
+  .button__animated {
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+
+  }
+
+/* ---------------------------------
+            BUTTON ANIMATED :: LOWER
+  -----------------------------------*/
+.button__animated--lower {
     font-size: .9em;
     border: none;
     background-color: var(--color-green);
     color: var(--color-white);
-    margin: 12em 20em;
     border-radius: .25em;
     padding: 1.1em 1.6em;
     cursor: pointer;
     transition: all .4s ease-in-out;
 }
 
-.button__animated:hover {
+.button__animated--lower:hover {
   transform: scale(0.8);
   background-color: transparent;
   border: 1px solid var(--color-green);
   color: var(--color-green);
+}
+
+/* ---------------------------------
+            BUTTON ANIMATED :: INCREASE
+  -----------------------------------*/
+  .button__animated--increase {
+    font-size: .9em;
+    border: none;
+    background-color: var(--color-blue);
+    color: var(--color-white);
+    border-radius: .25em;
+    padding: 1.1em 1.6em;
+    cursor: pointer;
+    transition: all .4s ease-in-out;
+}
+
+.button__animated--increase:hover {
+  transform: scale(1.1);
+  background-color: transparent;
+  border: 1px solid var(--color-blue);
+  color: var(--color-blue);
 }
