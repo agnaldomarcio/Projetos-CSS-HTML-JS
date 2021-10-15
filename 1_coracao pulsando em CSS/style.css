@@ -4,7 +4,7 @@
   -----------------------------------*/
   :root {
     --color-white: rgb(255, 255, 255);
-    --color-gray: rgb(13, 118, 167);
+    --color-blue: rgb(13, 118, 167);
     --color-red: rgb(187, 24, 12);
   
     --box-shadow: 0px 0px 27px 0px rgb(0, 0, 0);
@@ -40,7 +40,7 @@
   }
  
   h1 {
-    color: var(--color-gray);
+    color: var(--color-blue);
     font-weight: 700;
     text-align: center;
   }
