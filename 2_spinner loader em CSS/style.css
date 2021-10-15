@@ -1,0 +1,72 @@
+
+  /* ---------------------------------
+            CONFIGURAÇÕES GERAIS
+  -----------------------------------*/
+  :root {
+    --color-white: rgb(255, 255, 255);
+    --color-blue: rgb(13, 118, 167);
+  
+    --font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  
+  html, 
+  body {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  
+  *,
+  *:before,
+  *:after {
+    -webkit-box-sizing: inherit;
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+  }
+  
+  html,
+  body {
+    background-color: var(--color-white);
+    font-family: var(--font-family);
+    font-size: 1rem;
+    letter-spacing: 0.1em;
+    line-height: 1.6;
+    font-kerning: normal;
+    text-rendering: optimizeLegibility;
+    font-variant-ligatures: common-ligatures contextual;
+  }
+ 
+  h1 {
+    color: var(--color-blue);
+    font-weight: 700;
+    text-align: center;
+  }
+
+  .container {
+    width: 50em;
+    margin: 5em auto;
+    padding: 1em;
+  }
+
+/* ---------------------------------
+            SPINNER LOADER
+  -----------------------------------*/
+.spinner__loader {
+    display: inline-block;
+    border: 4px solid rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    border-left-color: var(--color-blue);
+    margin: 16em;
+    height: 13em;
+    width: 13em;
+    animation: spinner__loader 1.2s linear infinite;
+}
+
+@keyframes spinner__loader {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
