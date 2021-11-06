@@ -7,6 +7,7 @@
     --color-green: rgb(43, 141, 112);
     --color-blue: rgb(18, 165, 202);
     --color-red: rgb(207,80,80);
+    --color-gray: rgb(146,149,151);
   
     --font-family: Verdana, Geneva, Tahoma, sans-serif;
   }
@@ -141,4 +142,45 @@
     100% {
       transform: translateX(0);
     }
+  }
+
+  /* ---------------------------------
+      BUTTON ANIMATED :: BORDER
+  -----------------------------------*/
+  .button__animated--border {
+    font-size: .9em;
+    border: none;
+    background-color: var(--color-gray);
+    color: var(--color-white);
+    border-radius: .25em;
+    padding: 1.1em 1.6em;
+    cursor: pointer;  
+    position: relative;
+  }
+  .button__animated--border:before,
+  .button__animated--border:after {
+    border: 0 solid transparent;
+    content: '';
+    position: absolute;
+    height: 0;
+    border-radius: .25em;
+    transition: all .4s;
+    width: 2em;
+  }
+
+  .button__animated--border:before {
+    border-top: 2px solid var(--color-gray);
+    right: 0;
+    top: -4px;
+  }
+  
+  .button__animated--border:after {
+    border-bottom: 2px solid var(--color-gray);
+    bottom: -4px;
+    left: 0;
+  }
+  
+  .button__animated--border:hover:before,
+  .button__animated--border:hover:after {
+    width: 100%;
   }
