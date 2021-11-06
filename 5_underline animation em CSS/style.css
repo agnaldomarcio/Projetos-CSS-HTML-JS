@@ -1,0 +1,83 @@
+
+  /* ---------------------------------
+            CONFIGURAÇÕES GERAIS
+  -----------------------------------*/
+  :root {
+    --color-white: rgb(255, 255, 255);
+    --color-blue: rgb(13, 118, 167);
+  
+    --font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  
+  html, 
+  body {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  
+  *,
+  *:before,
+  *:after {
+    -webkit-box-sizing: inherit;
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+  }
+  
+  html,
+  body {
+    background-color: var(--color-white);
+    font-family: var(--font-family);
+    font-size: 1rem;
+    letter-spacing: 0.1em;
+    line-height: 1.6;
+    font-kerning: normal;
+    text-rendering: optimizeLegibility;
+    font-variant-ligatures: common-ligatures contextual;
+  }
+ 
+  h1 {
+    color: var(--color-blue);
+    font-weight: 700;
+    text-align: center;
+  }
+
+  .container {
+    width: 50em;
+    margin: 5em auto;
+    padding: 1em;
+  }
+
+/* ---------------------------------
+            UNDERLINE ANIMATION
+  -----------------------------------*/
+.underline__animation {
+   position: relative;
+   margin: 10em 0 0 15em;
+   width: 20em;
+}
+
+.underline__animation--hover {
+  position: relative;
+  display: inline-block;
+  color: var(--color-blue);
+  font-size: 1.5em;
+}
+
+.underline__animation--hover:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  background-color: var(--color-blue);
+  transform: scaleX(0);
+  height: 0.18em;
+  bottom: 0;
+  left: 0;
+  transform-origin: bottom right;
+  transition: transform 0.35s ease-in-out;
+}
+
+.underline__animation--hover:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
