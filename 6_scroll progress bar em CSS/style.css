@@ -31,6 +31,7 @@
     font-size: 1rem;
     letter-spacing: 0.1em;
     line-height: 1.6;
+    min-height: 200vh;
   }
  
   h1 {
@@ -40,7 +41,9 @@
   }
 
   .container {
-    min-height: 200vh;
+    width: 50em;
+    margin: 5em auto;
+    padding: 1em;
   }
 
 /* ---------------------------------
